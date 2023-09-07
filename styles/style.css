@@ -1,4 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
 .main-container{
     display: flex;
-    
+    background-color: rgb(210, 220, 240);
+    width: 70%;
+    height:fit-content;
+    justify-content: space-between;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    color: rgb(1, 0, 0);
+    font-family: 'Space Mono', monospace;
+    border-bottom: 7px solid rgb(31, 5, 57); 
+    border-left: 3kpx solid rgb(31, 5, 57);;
+
+}
+
+.container-left{
+    width: 600px;
+    padding: 10px;
+}
+
+.container-right{
+    padding: 10px;
+}
+
+#slackDisplayImage{
+    width: 400px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 2px solid rgb(127, 7, 240);
+    border-style: gradient;
 }
