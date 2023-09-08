@@ -14,12 +14,14 @@
     font-family: 'Space Mono', monospace;
     border-bottom: 7px solid rgb(31, 5, 57); 
     border-left: 3kpx solid rgb(31, 5, 57);;
-
+    margin: 0 auto;
 }
 
 .container-left{
+    display: grid;
+    grid-template-columns: 1fr ;
     width: 600px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .container-right{
@@ -32,4 +34,9 @@
     border-bottom-left-radius: 50px;
     border: 2px solid rgb(127, 7, 240);
     border-style: gradient;
+}
+
+
+#githubURL{
+    text-decoration: none;
 }

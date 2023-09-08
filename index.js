@@ -7,6 +7,24 @@ function updateDateTime(){
     let seconds = currentDate.getSeconds();
     let milliseconds = currentDate.getMilliseconds();
 
-    formattedTime = padNumber(hours)
+    
+    formattedTime = padNumber(hours) + ":" + padNumber(minutes) + ":" + padNumber(seconds) + ":" + milliseconds
+
+
+    document.getElementById("currentDayOfTheWeek").textContent = dayOfWeek;
+    document.getElementById("currentUTCTime").textContent = formattedTime;
 
 }
+
+function padNumber(number) {
+    if (number < 10) {
+        return "0" + number;
+    }
+
+    return number;
+}
+
+
+updateDateTime();
+
+setInterval(updateDateTime, 1)
