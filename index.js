@@ -11,8 +11,8 @@ function updateDateTime(){
     formattedTime = padNumber(hours) + ":" + padNumber(minutes) + ":" + padNumber(seconds) + ":" + milliseconds
 
 
-    document.getElementById("currentDayOfTheWeek").textContent = dayOfWeek;
-    document.getElementById("currentUTCTime").textContent = formattedTime;
+    document.querySelector("[data-testid =currentDayOfTheWeek]").textContent = dayOfWeek;
+    document.querySelector("[data-testid=currentUTCTime]").textContent = formattedTime;
 
 }
 

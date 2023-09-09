@@ -28,7 +28,7 @@
     padding: 10px;
 }
 
-#slackDisplayImage{
+img[data-testid="slackDisplayImage"]{
     width: 400px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -37,6 +37,6 @@
 }
 
 
-#githubURL{
+a[data-testid="githubURL"]{
     text-decoration: none;
 }
